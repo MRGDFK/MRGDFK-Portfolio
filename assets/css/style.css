@@ -239,6 +239,7 @@ body.nav-active {
   left: calc(100% - 70px);
 }
 
+
 .section-subtitle {
   text-transform: uppercase;
   font-size: var(--fs-8);
@@ -593,9 +594,10 @@ body.nav-active {
 .hero-title {
   text-transform: uppercase;
   word-break: break-all;
-  color: var(--white);
+  color: #c52034;
   font-weight: var(--fw-700);
-  letter-spacing: 8px;
+  letter-spacing: 2px;
+
 }
 
 .hero-subtitle {
@@ -608,8 +610,8 @@ body.nav-active {
   margin-block: 10px 30px;
 }
 .hero-subtitle1 {
-  font-size: var(--fs-6);
   text-transform: uppercase;
+  font-size: var(--fs-6);
   font-weight: var(--fw-700);
   color: var(--white);
   letter-spacing: 2px;
@@ -1712,6 +1714,50 @@ div.gallery .item {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+/** fixing the hero section only **/
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 45px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 32px !important;
+  }
+
+  .auto-type-2 {
+    font-size: 34px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-title {
+    font-size: 38px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 28px !important;
+  }
+
+  .auto-type-2 {
+    font-size: 30px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hero-title {
+    font-size: 28px !important;
+    letter-spacing: 2px;
+  }
+
+  .hero-subtitle {
+    font-size: 21px !important;
+  }
+
+  .auto-type-2 {
+    font-size: 21px !important;
+  }
+}
+
 
 /**
  * responsive for large than 992px screen
