@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creates Digital Future through Digital Media">
+    <meta name="keywords" content="Video Editor, Cinematographer, Photographer, Graphic Designer">
+    <meta name="author" content="ShutterArc Studios">
+    <meta name="googlebot" content="index, follow">
+    <!-- Open Graph (OG) Meta Tags for Social Sharing -->
+    <meta property="og:title" content="ShutterArc Studios - Get Your Brand Identity">
+    <meta property="og:description"
+        content="Your creative partner for visual excellence. Video editing, cinematography, photography, and graphic design services.">
+    <meta property="og:image" content="assets\images\Logo.png"> <!-- Ensure the image is publicly accessible -->
+    <meta property="og:url" content="http://www.shutterarcstudios.com">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="assets\images\Logo.png">
+    <meta name="twitter:title" content="ShutterArc Studios - Get Your Brand Identity">
+    <meta name="twitter:description"
+        content="Your creative partner for visual excellence. Video editing, cinematography, photography, and graphic design services.">
+    <meta name="twitter:image" content="assets\images\Logo.png">
+
+    <!-- 
+          - primary meta tags
+        -->
+    <title>ShutterArc Studios - Get your brand identity</title>
+
+    <!-- 
+          - favicon
+        -->
+    <link rel="icon" href="assets/images/Logo.ico" type="image/x-icon">
+
+    <!-- 
+          - google font link
+        -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <!-- 
+          - swiper css link
+        -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!---
+          - Font Awsome
+        --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 
+          - custom css link
+        -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+        footer {
+            background: hsla(231, 10%, 14%, 1);
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-content .designedBy a {
+            display: inline-block;
+        }
+
+        a:hover {
+            transition: 0.4s;
+            color: #c92034;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    - #HEADER
+  -->
+    <header class="header" data-header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="./assets/images/Logo.png" width="80" height="40" alt="Pfolio home" />
+            </a>
+
+            <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+            </button>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="index.html" class="navbar-link">Home</a>
+                    </li>
+                </ul>
+
+                <ul class="social-list">
+                    <li>
+                        <a href="https://dribbble.com/MRGDFK/" target="_blank" class="social-link">
+                            <ion-icon class="footer-icon" name="logo-dribbble"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/_sharjil_khan_/" target="_blank" class="social-link">
+                            <ion-icon class="footer-icon" name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.behance.net/sharjilkhan" target="_blank" class="social-link">
+                            <ion-icon class="footer-icon" name="logo-behance"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/sharjil-shabab-khan-784754191/" target="_blank"
+                            class="social-link">
+                            <ion-icon class="footer-icon" name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@MrGadgetFreak" target="_blank" class="social-link">
+                            <ion-icon class="footer-icon" name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+    </header>
+    <!-- 
+    - #FOOTER
+  -->
+    <section class="filter-gallery">
+        <p class="gallery-title">Explore My Portfolio</p>
+        <main class="mainContainer">
+            <!--  *****  Buttons Section Starts  *****  -->
+            <div class="button-group">
+                <button class="button active" data-filter="*">All</button>
+                <button class="button" data-filter=".videos">Videos</button>
+                <button class="button" data-filter=".reels">Reels</button>
+                <button class="button" data-filter=".animations">Animations</button>
+                <button class="button" data-filter=".graphics">Graphics Design</button>
+            </div>
+            <!--  *****  Buttons Section Ends  *****  -->
+
+            <!--  *****  Gallery Section Starts  *****  -->
+            <div class="gallery">
+                <!--  *****  Card Starts  *****  -->
+                <div class="item graphics">
+                    <iframe src="https://www.behance.net/embed/project/102332845?ilo0=1" height="316" width="404"
+                        allowfullscreen lazyload frameborder="0" allow="clipboard-write" loading="lazy"
+                        refererPolicy="strict-origin-when-cross-origin"></iframe>
+                    <h2 class="portfolioTitle">Designing</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                <!--  *****  Card Starts  *****  -->
+                <div class="item videos">
+                    <iframe width="1225" height="689" src="https://www.youtube.com/embed/Y8pyP4fAkYY?list=PL2Ib2S5eeOv5WRtktIKQDhqlUkq2yaTl8" 
+                    title="Shoot &amp; Edit for AIUB IPE Department" frameborder="0" loading = "lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Long Video</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+
+                <!--  *****  Card Starts  *****  -->
+                <div class="item videos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Sv_anuMb3MY?si=VXKVFbYwU1cOeJlF"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Long Video</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                
+                <!--  *****  Card Starts  *****  -->
+                <div class="item videos">
+                    <iframe width="1225" height="705" src="https://www.youtube.com/embed/RdWZBU4ws2U?list=PL2Ib2S5eeOv56HOIoQTrr0BqooXkUQ_9v" 
+                    title="Edi ShowCase 35" frameborder="0" loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Long Video</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+
+                <!--  *****  Card Starts  *****  -->
+                <div class="item videos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rnokvhNRlZk?list=PL2Ib2S5eeOv56HOIoQTrr0BqooXkUQ_9v" 
+                    title="Documentary Type Edit 01" frameborder="0" loading ="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Long Video</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                
+                <!--  *****  Card Starts  *****  -->
+                <div class="item videos">
+                    <iframe width="1225" height="689" src="https://www.youtube.com/embed/Upa7liTsYWA?list=PL2Ib2S5eeOv56HOIoQTrr0BqooXkUQ_9v" 
+                    title="Edit ShowCase 21" frameborder="0" loading ="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Long Video</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                
+                <!--  *****  Card Starts  *****  -->
+                <div class="item videos">
+                    <iframe width="1225" height="689" src="https://www.youtube.com/embed/9S5-_57V0r0?list=PL2Ib2S5eeOv56HOIoQTrr0BqooXkUQ_9v" 
+                    title="Edit ShowCase 22" frameborder="0" loading ="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Long Video</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+
+                <!--  *****  Card Starts  *****  -->
+                <div class="item reels">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1_IDk-rL5tE?si=oGMkvqJ8d7xS7nCC"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Shorts/Reels</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+
+                <!--  *****  Card Starts  *****  -->
+                <div class="item videos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kqVr-HZ5yEI?si=bMWYiQhmhFgM3dvo"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Long Video</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                <!--  *****  Card Starts  *****  -->
+                <div class="item reels">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/s1iQ9Fnm_x4?si=vPqY3RlrXK4OS-m_"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Shorts/Reels</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                <!--  *****  Card Starts  *****  -->
+                <div class="item videos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sl3D_mHp3zI?si=SbK8cuVr5ubonx5p"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Long Video</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                <!--  *****  Card Starts  *****  -->
+                <div class="item graphics">
+                    <iframe src="https://www.behance.net/embed/project/112173629?ilo0=1" height="316" width="404"
+                        allowfullscreen lazyload frameborder="0" allow="clipboard-write" loading="lazy"
+                        refererPolicy="strict-origin-when-cross-origin"></iframe>
+                    <h2 class="portfolioTitle">Designing</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                <!--  *****  Card Starts  *****  -->
+                <div class="item reels">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L3R9St5frbU?si=6jJ1YQf44xkkfLbX"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Shorts/Reels</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                
+                <!--  *****  Card Starts  *****  -->
+                <div class="item reels">
+                    <iframe width="1225" height="705" src="https://www.youtube.com/embed/KOD3tH7UFS8?list=PL2Ib2S5eeOv56Z_P8gXk7xvNsA1vL3F3i" 
+                    title="Gizmo   Baseus Adaman FINAL" frameborder="0" loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Shorts/Reels</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+
+                <!--  *****  Card Starts  *****  -->
+                <div class="item animations">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/P34tCD2LfDs?si=m-toXbwK1qQ50fT8"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Faceless Animation</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+
+                <!--  *****  Card Starts  *****  -->
+                <div class="item animations">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ucdkw5DqPYA?si=Cgqu6sV97OMqUiVT"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Faceless Animation</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                <!--  *****  Card Starts  *****  -->
+                <div class="item videos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zqRjE4VFVVY?si=ERi1rGf-gnz8ChGK"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Long Video</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                <!--  *****  Card Starts  *****  -->
+                <div class="item animations">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iYRPenqjBWM?si=bdRN9l7NMfjgbqdj"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Faceless Animation</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+
+                <!--  *****  Card Starts  *****  -->
+                <div class="item videos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N_yDd-ihzik?si=1HQVJ0yMFINxLzW-"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Long Video</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+
+                <!--  *****  Card Starts  *****  -->
+                <div class="item reels">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VmZ-MS7avX4?si=Oj5JSAnDDvmkPw2Z"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Shorts/Reels</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                <!--  *****  Card Starts  *****  -->
+                <div class="item videos">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/En5eJJcNZnU?si=Oam_EXC-DlqJgFrO"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Long Video</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                <!--  *****  Card Starts  *****  -->
+                <div class="item reels">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SDGSS6NpoP8?si=GG-0xhmf0GVsS0PQ"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Shorts/Reels</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                <!--  *****  Card Starts  *****  -->
+                <div class="item graphics">
+                    <iframe src="https://www.behance.net/embed/project/121415167?ilo0=1" height="316" width="404"
+                        allowfullscreen lazyload frameborder="0" allow="clipboard-write" loading="lazy"
+                        refererPolicy="strict-origin-when-cross-origin"></iframe>
+                    <h2 class="portfolioTitle">Designing</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                <!--  *****  Card Starts  *****  -->
+                <div class="item reels">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YjMgFo3EAf0?si=4aS6uAppV4-5PRvz"
+                        title="YouTube video player" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2 class="portfolioTitle">Shorts/Reels</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+                <!--  *****  Card Starts  *****  -->
+                <div class="item graphics">
+                    <iframe src="https://www.behance.net/embed/project/135452745?ilo0=1" height="316" width="404"
+                        allowfullscreen lazyload frameborder="0" allow="clipboard-write" loading="lazy"
+                        refererPolicy="strict-origin-when-cross-origin"></iframe>
+                    <h2 class="portfolioTitle">Designing</h2>
+                </div>
+                <!--  *****  Card Ends  *****  -->
+            </div>
+            <!--  *****  Gallery Section Ends  *****  -->
+        </main>
+    </section>
+    <footer>
+        <div class="footer-content container">
+            <div class="copyright">
+                Copyright © 2024 Sharjil Khan
+            </div>
+            <div class="designedBy">
+                <p class="">Designed By <a class="footer-link" href="https://ashikulislamm.github.io/myportfolio/"
+                        target="_blank">Ashikul Islam</a></p>
+            </div>
+            <div class="socials">
+                <ul class="social-list">
+                    <li>
+                        <a href="https://www.instagram.com/_sharjil_khan_/" target="_blank" class="social-link">
+                            <ion-icon class="footer-icon" name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/sharjil-shabab-khan-784754191/" target="_blank"
+                            class="social-link">
+                            <ion-icon class="footer-icon" name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/sharjilkhan" target="_blank" class="social-link">
+                            <ion-icon class="footer-icon" name="logo-behance"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@MrGadgetFreak" target="_blank" class="social-link">
+                            <ion-icon class="footer-icon" name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/MRGDFK/" target="_blank" class="social-link">
+                            <ion-icon class="footer-icon" name="logo-dribbble"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--   *****   JQuery Link   *****   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!--   *****   Isotope Filter Link   *****  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script type="text/javascript">
+        var $galleryContainer = $(".gallery").isotope({
+            itemSelector: ".item",
+            layoutMode: "fitRows",
+        });
+
+        $(".button-group .button").on("click", function () {
+            $(".button-group .button").removeClass("active");
+            $(this).addClass("active");
+
+            var value = $(this).attr("data-filter");
+            $galleryContainer.isotope({
+                filter: value,
+            });
+        });
+    </script>
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+    <script>
+        // Check if the page has already been refreshed
+        if (!sessionStorage.getItem("page_refreshed")) {
+            // Set a flag in sessionStorage
+            sessionStorage.setItem("page_refreshed", "true");
+            // Reload the page
+            window.location.reload();
+        }
+
+    </script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
